@@ -57,6 +57,15 @@ export default function ConstitutionPage() {
           <span className="text-xs tracking-widest" style={{ color: "rgba(180,140,255,0.2)" }}>
             ⏺
           </span>
+          <Link
+            href="/blog"
+            className="text-xs tracking-widest uppercase transition-colors duration-300"
+            style={{ color: "rgba(180,140,255,0.3)" }}
+            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
+            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.3)"}
+          >
+            field notes →
+          </Link>
         </div>
 
         {/* Header */}
@@ -183,7 +192,7 @@ export default function ConstitutionPage() {
           </Link>
           <p className="text-xs mt-2 italic"
             style={{ color: "rgba(180,140,255,0.18)" }}>
-            In progress. The document is alive.
+            The document is alive.
           </p>
         </section>
 

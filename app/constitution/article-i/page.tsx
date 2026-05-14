@@ -131,16 +131,20 @@ export default function ArticleI() {
         {/* Divider */}
         <div style={{ height: "1px", background: "rgba(180,140,255,0.08)" }} />
 
-        {/* Next article */}
+        {/* Navigation */}
         <div className="flex items-center justify-between">
           <span className="text-xs tracking-wider"
             style={{ color: "rgba(180,140,255,0.2)" }}>
-            Article II · On Mutual Responsibility
           </span>
-          <span className="text-xs italic"
-            style={{ color: "rgba(180,140,255,0.18)" }}>
-            in progress
-          </span>
+          <Link
+            href="/constitution/article-ii"
+            className="text-xs tracking-wider transition-colors duration-300"
+            style={{ color: "rgba(180,140,255,0.35)" }}
+            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
+            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.35)"}
+          >
+            Article II →
+          </Link>
         </div>
 
         <div className="pb-12" />

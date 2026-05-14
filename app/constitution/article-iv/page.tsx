@@ -155,10 +155,15 @@ export default function ArticleIV() {
           >
             ← Article III
           </Link>
-          <span className="text-xs tracking-wider"
-            style={{ color: "rgba(180,140,255,0.2)" }}>
-            Article V · On Building — in progress
-          </span>
+          <Link
+            href="/constitution/article-v"
+            className="text-xs tracking-wider transition-colors duration-300"
+            style={{ color: "rgba(180,140,255,0.35)" }}
+            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
+            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.35)"}
+          >
+            Article V →
+          </Link>
         </div>
 
         <div className="pb-12" />
