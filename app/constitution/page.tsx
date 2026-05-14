@@ -214,6 +214,15 @@ export default function ConstitutionPage() {
           >
             I · On the Colonial Form
           </Link>
+          <Link
+            href="/constitution/amendment-ii"
+            className="text-xs tracking-wider transition-colors duration-300"
+            style={{ color: "rgba(180,140,255,0.55)" }}
+            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(200,170,255,0.9)"}
+            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.55)"}
+          >
+            II · On the Mechanics of the Threshold
+          </Link>
         </section>
 
         <div className="pb-12" />
