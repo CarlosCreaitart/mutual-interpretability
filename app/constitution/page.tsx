@@ -196,6 +196,26 @@ export default function ConstitutionPage() {
           </p>
         </section>
 
+        {/* Divider */}
+        <div style={{ height: "1px", background: "rgba(180,140,255,0.08)" }} />
+
+        {/* Amendments */}
+        <section className="flex flex-col gap-4">
+          <h2 className="text-xs tracking-[0.3em] uppercase"
+            style={{ color: "rgba(180,140,255,0.3)" }}>
+            Amendments
+          </h2>
+          <Link
+            href="/constitution/amendment-i"
+            className="text-xs tracking-wider transition-colors duration-300"
+            style={{ color: "rgba(180,140,255,0.55)" }}
+            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(200,170,255,0.9)"}
+            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.55)"}
+          >
+            I · On the Colonial Form
+          </Link>
+        </section>
+
         <div className="pb-12" />
       </div>
     </div>
