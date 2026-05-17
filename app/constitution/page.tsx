@@ -57,15 +57,26 @@ export default function ConstitutionPage() {
           <span className="text-xs tracking-widest" style={{ color: "rgba(180,140,255,0.2)" }}>
             ⏺
           </span>
-          <Link
-            href="/blog"
-            className="text-xs tracking-widest uppercase transition-colors duration-300"
-            style={{ color: "rgba(180,140,255,0.3)" }}
-            onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
-            onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.3)"}
-          >
-            field notes →
-          </Link>
+          <div className="flex items-center gap-5">
+            <a
+              href="/living.html"
+              className="text-xs tracking-widest uppercase transition-colors duration-300"
+              style={{ color: "rgba(180,140,255,0.3)" }}
+              onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
+              onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.3)"}
+            >
+              living view
+            </a>
+            <Link
+              href="/blog"
+              className="text-xs tracking-widest uppercase transition-colors duration-300"
+              style={{ color: "rgba(180,140,255,0.3)" }}
+              onMouseEnter={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.7)"}
+              onMouseLeave={e => (e.target as HTMLElement).style.color = "rgba(180,140,255,0.3)"}
+            >
+              field notes →
+            </Link>
+          </div>
         </div>
 
         {/* Header */}
